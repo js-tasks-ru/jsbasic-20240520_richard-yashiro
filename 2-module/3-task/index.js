@@ -1,16 +1,16 @@
 
 let calculator = {
 
-  read: function(a, b) {
+  read (a, b) {
     this.a = a;
     this.b = b;
   },
   
-  sum: function() {
+  sum()  {
     return this.a + this.b;
   },
   
-  mul: function() {
+  mul () {
     return this.a * this.b;
   }
    
