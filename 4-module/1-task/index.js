@@ -1,14 +1,10 @@
 function makeFriendsList(friends) {
-
-  const ul = document.createElement('ul');
+  let ul = document.createElement('ul');
 
   friends.forEach(friend => {
-    const li = document.createElement('li');
-
+    let li = document.createElement('li');
     li.textContent = `${friend.firstName} ${friend.lastName}`;
-    ul.append(li);
-
-   
+    ul.appendChild(li);
   });
 
   return ul;
